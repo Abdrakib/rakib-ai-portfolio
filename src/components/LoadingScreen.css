@@ -1,0 +1,30 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loading-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.05em;
+}
+
+.loading-bar {
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  margin-top: 1.5rem;
+  border-radius: 2px;
+  max-width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}

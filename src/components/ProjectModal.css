@@ -1,0 +1,138 @@
+.project-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.project-modal {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  max-width: 720px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: var(--text);
+}
+
+.modal-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.modal-desc {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.modal-section {
+  margin-bottom: 1.5rem;
+}
+
+.modal-section h3,
+.modal-col h3 {
+  font-size: 0.875rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.modal-section p,
+.modal-col p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.modal-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+}
+
+.badge-tech {
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.badge-highlight {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--accent);
+}
+
+.badge-metric {
+  background: var(--surface-hover);
+  color: var(--text);
+}
+
+.modal-extra {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.modal-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}

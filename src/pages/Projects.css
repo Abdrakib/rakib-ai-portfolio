@@ -1,0 +1,125 @@
+.projects {
+  padding: 2rem 1.5rem;
+}
+
+.projects-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.toggle-btn:hover {
+  color: var(--text);
+}
+
+.toggle-btn.active {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.projects-loading,
+.projects-error {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.projects-loading p,
+.projects-error p {
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+.projects-error p {
+  color: #ef4444;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.projects-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.featured-category {
+  margin-bottom: 2rem;
+}
+
+.featured-category:last-child {
+  margin-bottom: 0;
+}
+
+.featured-category-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.section-toggle {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  transition: border-color 0.2s;
+}
+
+.section-toggle:hover {
+  border-color: var(--accent);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
