@@ -32,6 +32,7 @@ export const featuredProjects = [
     category: 'machine_learning',
     title: 'Consumer Credit Risk Prediction',
     githubUrl: 'https://github.com/Abdrakib/credit-risk-predictor',
+    demoUrl: 'https://credit-risk-predictor-mpt9.onrender.com',
     notebookUrl: 'https://github.com/Abdrakib/credit-risk-predictor/blob/main/Customer_Credit_Risk_Prediction_Project%20(1).ipynb',
     tags: ['Machine Learning', 'XGBoost', 'Feature Engineering'],
     modelTech: 'Scikit-learn • XGBoost • Threshold Tuning',

@@ -43,7 +43,7 @@ export const projectMeta = {
     metrics: { Risk: 'Low / Medium / High' },
     highlights: ['Interactive form', 'Risk visualization', 'Explainability panel', 'Prediction history'],
     githubUrl: 'https://github.com/Abdrakib/credit-risk-predictor',
-    demoUrl: null,
+    demoUrl: 'https://credit-risk-predictor-mpt9.onrender.com',
     reportUrl: null,
     notebookUrl: 'https://github.com/Abdrakib/credit-risk-predictor/blob/main/Customer_Credit_Risk_Prediction_Project%20(1).ipynb',
     demoImages: [],

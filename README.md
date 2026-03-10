@@ -98,5 +98,5 @@ Output in `dist/`. Deploy to [Vercel](https://vercel.com) by importing this repo
 - [rakib-ai-portfolio](https://github.com/Abdrakib/rakib-ai-portfolio) — This portfolio website
 - [brain-tumor-ai-app](https://github.com/Abdrakib/brain-tumor-ai-app) — Brain tumor MRI AI app ([Demo](https://ai-ml-portfolio-theta.vercel.app))
 - [AI_ML-Portfolio](https://github.com/Abdrakib/AI_ML-Portfolio) — ML notebooks (50+ projects)
-- [credit-risk-predictor](https://github.com/Abdrakib/credit-risk-predictor) — Credit risk ML web app
+- [credit-risk-predictor](https://github.com/Abdrakib/credit-risk-predictor) — Credit risk ML web app ([Demo](https://credit-risk-predictor-mpt9.onrender.com))
 - [LinkedIn](https://www.linkedin.com/in/rakib-abente-3a5466300/)
