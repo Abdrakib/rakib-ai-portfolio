@@ -25,24 +25,37 @@ export default function FeaturedProjectCard({ project }) {
         ))}
       </div>
       <div className="featured-project-actions">
-        <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-gh"
-        >
-          <HiExternalLink size={16} />
-          View Code
-        </a>
-        {project.notebookUrl && (
+        {project.githubUrl && (
           <a
-            href={project.notebookUrl}
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-gh"
+          >
+            <HiExternalLink size={16} />
+            GitHub
+          </a>
+        )}
+        {project.demoUrl && (
+          <a
+            href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
           >
             <HiExternalLink size={16} />
-            Open Notebook
+            Live Demo
+          </a>
+        )}
+        {project.notebookUrl && (
+          <a
+            href={project.notebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-gh"
+          >
+            <HiExternalLink size={16} />
+            Notebook
           </a>
         )}
       </div>

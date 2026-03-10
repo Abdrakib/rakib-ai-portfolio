@@ -19,7 +19,8 @@ export default function ProjectModal({ repo, meta, onClose }) {
   if (!repo) return null
 
   const m = meta || getProjectMeta(repo.name)
-  const hasHomepage = repo.homepage && repo.homepage.trim() !== ''
+  const demoUrl = repo.homepage?.trim() || m?.demoUrl
+  const hasDemo = demoUrl && demoUrl.length > 0
   const updated = repo.updated_at
     ? new Date(repo.updated_at).toLocaleDateString('en-US', {
         year: 'numeric',
@@ -132,9 +133,9 @@ export default function ProjectModal({ repo, meta, onClose }) {
               <HiExternalLink size={16} />
               GitHub
             </a>
-            {hasHomepage && (
+            {hasDemo && (
               <a
-                href={repo.homepage}
+                href={demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"

@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing AI/ML projects, research, and demos. Built with React, Vite, and a premium dark theme.
 
-🔗 **Live Demo:** [Deploy to Vercel for your link]
+🔗 **Live Demo:** [ai-ml-portfolio-theta.vercel.app](https://ai-ml-portfolio-theta.vercel.app)
 
 ---
 
@@ -95,5 +95,8 @@ Output in `dist/`. Deploy to [Vercel](https://vercel.com) by importing this repo
 
 ## Related
 
-- [AI_ML-Portfolio](https://github.com/Abdrakib/AI_ML-Portfolio) — ML projects, notebooks, Brain Tumor demo
+- [rakib-ai-portfolio](https://github.com/Abdrakib/rakib-ai-portfolio) — This portfolio website
+- [brain-tumor-ai-app](https://github.com/Abdrakib/brain-tumor-ai-app) — Brain tumor MRI AI app ([Demo](https://ai-ml-portfolio-theta.vercel.app))
+- [AI_ML-Portfolio](https://github.com/Abdrakib/AI_ML-Portfolio) — ML notebooks (50+ projects)
+- [credit-risk-predictor](https://github.com/Abdrakib/credit-risk-predictor) — Credit risk ML web app
 - [LinkedIn](https://www.linkedin.com/in/rakib-abente-3a5466300/)
