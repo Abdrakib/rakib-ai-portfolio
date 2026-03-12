@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { fetchUserRepos } from '../lib/githubApi'
-import { featuredProjects, featuredProjectCategories } from '../data/featuredProjects'
+import { featuredProjects } from '../data/featuredProjects'
 import ProjectCard from '../components/ProjectCard'
 import FeaturedProjectCard from '../components/FeaturedProjectCard'
 import ProjectModal from '../components/ProjectModal'
@@ -116,20 +116,11 @@ export default function Projects() {
       </div>
       <ScrollReveal className="projects-section">
         <h2 className="section-title">Featured Projects</h2>
-        {featuredProjectCategories.map((cat) => {
-          const projectsInCategory = featuredProjects.filter((p) => p.category === cat.id)
-          if (projectsInCategory.length === 0) return null
-          return (
-            <div key={cat.id} className="featured-category">
-              <h3 className="featured-category-title">{cat.label}</h3>
-              <div className="project-grid">
-                {projectsInCategory.map((project) => (
-                  <FeaturedProjectCard key={project.id} project={project} />
-                ))}
-              </div>
-            </div>
-          )
-        })}
+        <div className="featured-project-grid">
+          {featuredProjects.map((project) => (
+            <FeaturedProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </ScrollReveal>
       <div className="projects-section all-projects">
         <button
