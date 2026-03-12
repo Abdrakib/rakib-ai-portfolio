@@ -53,6 +53,7 @@ export const featuredProjects = [
     category: 'deployment',
     title: 'AI Computer Science Tutor',
     githubUrl: 'https://github.com/Abdrakib/ai-cs-tutor',
+    demoUrl: 'https://ai-cs-tutor-abdrakib.vercel.app',
     tags: ['AI', 'Retrieval', 'Web Search', 'Education'],
     modelTech: 'RAG • Web Search • Programming Q&A',
     description: 'AI-powered CS tutor using retrieval and web search to answer programming and CS questions.',

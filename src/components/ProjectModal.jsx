@@ -19,7 +19,7 @@ export default function ProjectModal({ repo, meta, onClose }) {
   if (!repo) return null
 
   const m = meta || getProjectMeta(repo.name)
-  const demoUrl = repo.homepage?.trim() || m?.demoUrl
+  const demoUrl = m && 'demoUrl' in m ? m.demoUrl : repo.homepage?.trim()
   const hasDemo = demoUrl && demoUrl.length > 0
   const updated = repo.updated_at
     ? new Date(repo.updated_at).toLocaleDateString('en-US', {

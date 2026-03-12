@@ -11,7 +11,8 @@ export default function ProjectCard({ repo, labMode = false, onClick }) {
         day: 'numeric',
       })
     : '—'
-  const hasHomepage = repo.homepage && repo.homepage.trim() !== ''
+  const demoUrl = meta && 'demoUrl' in meta ? meta.demoUrl : repo.homepage
+  const hasDemo = demoUrl && demoUrl.trim() !== ''
 
   const content = (
     <>
@@ -56,9 +57,9 @@ export default function ProjectCard({ repo, labMode = false, onClick }) {
         >
           GitHub
         </a>
-        {hasHomepage && (
+        {hasDemo && (
           <a
-            href={repo.homepage}
+            href={demoUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
