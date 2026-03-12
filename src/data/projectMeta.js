@@ -66,7 +66,7 @@ export const projectMeta = {
   },
   'AI_ML-Portfolio': {
     overview:
-      '50+ notebook learning repository covering Machine Learning, Deep Learning, Computer Vision, NLP, and Data Science.',
+      '50+ Jupyter notebook learning experiments covering Machine Learning, Deep Learning, Computer Vision, NLP, and Data Science. Focused on hands-on learning (no deployed apps—see Featured Projects for those).',
     problem: 'Hands-on learning and experimentation across AI/ML domains.',
     approach:
       'Organized notebooks by domain (01–07 folders) with step-by-step implementations, datasets, and explanations. Ready for Colab or Jupyter.',
