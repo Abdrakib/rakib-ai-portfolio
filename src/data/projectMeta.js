@@ -61,7 +61,7 @@ export const projectMeta = {
     metrics: {},
     highlights: ['Retrieval-augmented', 'Web search', 'Programming Q&A'],
     githubUrl: 'https://github.com/Abdrakib/ai-cs-tutor',
-    demoUrl: 'https://ai-cs-tutor-abdrakib.vercel.app',
+    demoUrl: 'https://huggingface.co/spaces/Abdourakib/ai-computer-science-tutor',
     reportUrl: null,
     notebookUrl: null,
     demoImages: [],
