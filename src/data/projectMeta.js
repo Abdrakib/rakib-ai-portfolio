@@ -66,6 +66,62 @@ export const projectMeta = {
     notebookUrl: null,
     demoImages: [],
   },
+  'ai_datascience_agent': {
+    overview:
+      'Claude-powered AutoML agent: drop in any CSV, describe your goal in plain English, and run EDA through model training, Optuna tuning, SHAP, and exportable reports.',
+    problem:
+      'Tabular ML workflows are repetitive; practitioners need an intelligent assistant that can plan and execute pipelines without hand-writing every step.',
+    approach:
+      'Anthropic Claude tool-use orchestrates EDA, preprocessing, multi-model CV, hyperparameter search, and SHAP—with a Streamlit UI and inference tab for saved models.',
+    results:
+      'End-to-end agent with shareable HTML reports, model bundles, and hosted demos on Streamlit Cloud and Hugging Face.',
+    techStack: ['Python', 'Streamlit', 'Anthropic Claude', 'scikit-learn', 'XGBoost', 'LightGBM', 'Optuna', 'SHAP'],
+    dataset: 'User CSV (any tabular domain)',
+    model: 'LogReg / RF / XGBoost / LightGBM (task-selected)',
+    metrics: { Pipeline: 'EDA → train → tune → SHAP' },
+    highlights: ['Claude tool use', 'AutoML pipeline', 'SHAP explainability', 'Streamlit + HF Space'],
+    githubUrl: 'https://github.com/Abdrakib/ai_datascience_agent',
+    demoUrl: 'https://ai-data-science-agent.streamlit.app/',
+    reportUrl: null,
+    notebookUrl: null,
+    demoImages: [],
+  },
+  'gpt-from-scratch': {
+    overview:
+      'GPT-2 (124M) trained from scratch on TinyStories: tokenization, PyTorch training loop, validation, checkpoints, optional Alpaca tuning, and Hugging Face Hub deployment.',
+    problem: 'Understanding the full LLM stack from data to deployed weights.',
+    approach:
+      'Hugging Face datasets + Transformers, cosine schedule with warmup, gradient clipping, periodic validation and checkpointing; model pushed to Hub for browser generation.',
+    results: 'Best validation loss ~1.13 (Phase 1); live generation via Hugging Face model card.',
+    techStack: ['Python', 'PyTorch', 'Transformers', 'Datasets', 'Hugging Face Hub', 'Colab'],
+    dataset: 'karpathy/tinystories-gpt4-clean (1M stories)',
+    model: 'GPT2LMHeadModel 124M',
+    metrics: { 'Val loss (best)': '1.1295' },
+    highlights: ['Trained from scratch', '124M params', 'HF Hub demo', 'Instruction tuning phase'],
+    githubUrl: 'https://github.com/Abdrakib/gpt-from-scratch',
+    demoUrl: 'https://huggingface.co/Abdourakib/tinystories-gpt2-124m',
+    reportUrl: null,
+    notebookUrl: null,
+    demoImages: [],
+  },
+  'Speech-emotion-recognition': {
+    overview:
+      'Gradio app for speech emotion recognition using a fine-tuned HuBERT model on RAVDESS—upload audio or use the microphone.',
+    problem: 'Infer emotion from short speech clips for HCI and analysis use cases.',
+    approach:
+      'HuBERT sequence classification, Wav2Vec2 feature extractor, 16 kHz mono, 4 s window; deployed as a Hugging Face Space.',
+    results: 'Eight emotion classes with confidence scores and top-3 display in the UI.',
+    techStack: ['Python', 'Gradio', 'Transformers', 'PyTorch', 'Hugging Face Spaces'],
+    dataset: 'RAVDESS',
+    model: 'HuBERT fine-tuned',
+    metrics: { Classes: '8 emotions' },
+    highlights: ['Live Gradio demo', 'Upload + mic', 'HuBERT', 'RAVDESS'],
+    githubUrl: 'https://github.com/Abdrakib/Speech-emotion-recognition',
+    demoUrl: 'https://huggingface.co/spaces/Abdourakib/Speech-emotion-demo',
+    reportUrl: null,
+    notebookUrl: null,
+    demoImages: [],
+  },
   'AI_ML-Portfolio': {
     overview:
       '50+ Jupyter notebook learning experiments covering Machine Learning, Deep Learning, Computer Vision, NLP, and Data Science. Focused on hands-on learning (no deployed apps—see Featured Projects for those).',
