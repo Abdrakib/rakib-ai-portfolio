@@ -6,7 +6,10 @@
  * 1. Add an object with id, title, description, tags, githubUrl, notebookUrl (or homepage)
  * 2. Set category to one of the above
  * 3. Optional: modelTech for the "Model / Tech:" line
+ * 4. Set **addedAt** to the calendar day you add it (ISO `YYYY-MM-DD`). The UI sorts
+ *    newest-first, so new entries automatically appear at the top—you can append anywhere in this file.
  */
+
 export const featuredProjectCategories = [
   { id: 'language_models', label: 'Mini GPT / Language Models' },
   { id: 'computer_vision', label: 'Computer Vision' },
@@ -18,6 +21,7 @@ export const featuredProjectCategories = [
 export const featuredProjects = [
   {
     id: 'brain-tumor-detection',
+    addedAt: '2024-09-01',
     category: 'computer_vision',
     title: 'Brain Tumor Detection (MRI)',
     githubUrl: 'https://github.com/Abdrakib/brain-tumor-ai-app',
@@ -29,6 +33,7 @@ export const featuredProjects = [
   },
   {
     id: 'consumer-credit-risk',
+    addedAt: '2025-03-10',
     category: 'machine_learning',
     title: 'Consumer Credit Risk Prediction',
     githubUrl: 'https://github.com/Abdrakib/credit-risk-predictor',
@@ -40,6 +45,7 @@ export const featuredProjects = [
   },
   {
     id: 'explainable-ml-pipeline-agent',
+    addedAt: '2026-05-04',
     category: 'machine_learning',
     title: 'Explainable ML Pipeline Agent',
     githubUrl: 'https://github.com/Abdrakib/Explainable_ML-Pipeline-Agent',
@@ -51,6 +57,7 @@ export const featuredProjects = [
   },
   {
     id: 'visual-analyst-agent',
+    addedAt: '2026-05-06',
     category: 'computer_vision',
     title: 'Visual Analyst Agent',
     githubUrl: 'https://github.com/Abdrakib/visual-analyst-agent',
@@ -62,6 +69,7 @@ export const featuredProjects = [
   },
   {
     id: 'speech-emotion-recognition',
+    addedAt: '2026-04-18',
     category: 'nlp_audio',
     title: 'Speech Emotion Recognition (RAVDESS)',
     githubUrl: 'https://github.com/Abdrakib/Speech-emotion-recognition',
@@ -72,6 +80,7 @@ export const featuredProjects = [
   },
   {
     id: 'ai-cs-tutor',
+    addedAt: '2025-11-20',
     category: 'deployment',
     title: 'AI Computer Science Tutor',
     githubUrl: 'https://github.com/Abdrakib/ai-cs-tutor',
@@ -82,6 +91,7 @@ export const featuredProjects = [
   },
   {
     id: 'gpt-from-scratch',
+    addedAt: '2026-05-01',
     category: 'language_models',
     title: 'TinyStories GPT-2 (124M) From Scratch',
     githubUrl: 'https://github.com/Abdrakib/gpt-from-scratch',
@@ -92,3 +102,14 @@ export const featuredProjects = [
       'GPT-2 trained from scratch on 1M children’s stories—full pipeline and live text generation on Hugging Face.',
   },
 ]
+
+function cmpFeaturedByDateNewestFirst(a, b) {
+  const ta = new Date(a.addedAt || 0).getTime()
+  const tb = new Date(b.addedAt || 0).getTime()
+  return tb - ta
+}
+
+/** Newest `addedAt` first—use this in the UI instead of iterating `featuredProjects` directly. */
+export function getFeaturedProjectsForDisplay() {
+  return [...featuredProjects].sort(cmpFeaturedByDateNewestFirst)
+}

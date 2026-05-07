@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { fetchUserRepos } from '../lib/githubApi'
-import { featuredProjects } from '../data/featuredProjects'
+import { getFeaturedProjectsForDisplay } from '../data/featuredProjects'
 import ProjectCard from '../components/ProjectCard'
 import FeaturedProjectCard from '../components/FeaturedProjectCard'
 import ProjectModal from '../components/ProjectModal'
@@ -117,7 +117,7 @@ export default function Projects() {
       <ScrollReveal className="projects-section">
         <h2 className="section-title">Featured Projects</h2>
         <div className="featured-project-grid">
-          {featuredProjects.map((project) => (
+          {getFeaturedProjectsForDisplay().map((project) => (
             <FeaturedProjectCard key={project.id} project={project} />
           ))}
         </div>
