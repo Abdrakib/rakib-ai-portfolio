@@ -4,6 +4,8 @@ import './ProjectCard.css'
 
 export default function ProjectCard({ repo, labMode = false, onClick }) {
   const meta = getProjectMeta(repo.name)
+  const demoUrl = (meta && meta.demoUrl === null) ? '' : (meta?.demoUrl || repo.homepage?.trim() || '')
+  const hasDemo = demoUrl && demoUrl.length > 0
   const updated = repo.updated_at
     ? new Date(repo.updated_at).toLocaleDateString('en-US', {
         year: 'numeric',
@@ -11,9 +13,6 @@ export default function ProjectCard({ repo, labMode = false, onClick }) {
         day: 'numeric',
       })
     : '—'
-  const demoUrl = meta && 'demoUrl' in meta ? meta.demoUrl : repo.homepage
-  const hasDemo = demoUrl && demoUrl.trim() !== ''
-
   const content = (
     <>
       <div className="project-card-header">

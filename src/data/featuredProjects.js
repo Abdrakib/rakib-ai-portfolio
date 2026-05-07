@@ -39,15 +39,26 @@ export const featuredProjects = [
     description: 'ML web app predicting credit default risk with interactive interface and trained model.',
   },
   {
-    id: 'ai-datascience-agent',
+    id: 'explainable-ml-pipeline-agent',
     category: 'machine_learning',
-    title: 'AI Data Science Agent (AutoML)',
-    githubUrl: 'https://github.com/Abdrakib/ai_datascience_agent',
-    demoUrl: 'https://ai-data-science-agent.streamlit.app/',
-    tags: ['AI Agent', 'Claude', 'Streamlit', 'AutoML', 'SHAP'],
-    modelTech: 'Claude • XGBoost • LightGBM • Optuna • SHAP',
+    title: 'Explainable ML Pipeline Agent',
+    githubUrl: 'https://github.com/Abdrakib/Explainable_ML-Pipeline-Agent',
+    demoUrl: 'https://huggingface.co/spaces/Abdourakib/explainable-ml-pipeline-analysis-agent',
+    tags: ['Explainable AI', 'AutoML', 'Pipelines', 'Qwen'],
+    modelTech: 'Qwen 2.5 • Scikit-learn • XGBoost • SHAP • Gradio',
     description:
-      'Claude-powered AutoML agent: upload any CSV, describe your goal, get EDA through tuning, SHAP, and reports.',
+      'Full ML pipeline on tabular CSV data with plain-English explanations for every step—hosted demo via Hugging Face.',
+  },
+  {
+    id: 'visual-analyst-agent',
+    category: 'computer_vision',
+    title: 'Visual Analyst Agent',
+    githubUrl: 'https://github.com/Abdrakib/visual-analyst-agent',
+    demoUrl: 'https://huggingface.co/spaces/Abdourakib/visual-analyst-agent',
+    tags: ['Computer Vision', 'Gemini', 'Streamlit', 'Analytics'],
+    modelTech: 'Google Gemini • Streamlit • Plotly',
+    description:
+      'Analyzes chart, table, and dashboard images: trend analysis, structured extraction, and interactive insights.',
   },
   {
     id: 'speech-emotion-recognition',

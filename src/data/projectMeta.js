@@ -48,6 +48,43 @@ export const projectMeta = {
     notebookUrl: 'https://github.com/Abdrakib/credit-risk-predictor/blob/main/Customer_Credit_Risk_Prediction_Project%20(1).ipynb',
     demoImages: [],
   },
+  'Explainable_ML-Pipeline-Agent': {
+    overview:
+      'End-to-end ML pipeline on tabular data with plain-English explanations for preprocessing, model choice, and predictions.',
+    problem:
+      'Users need to trust ML workflows: black-box pipelines are hard to audit and learn from.',
+    approach:
+      'Combines AutoML-style model search (scikit-learn, XGBoost, LightGBM, etc.) with Qwen 2.5 explanations and SHAP-style interpretability; Gradio UI on Hugging Face.',
+    results: 'Interactive demo: upload CSV, run pipeline, read per-step explanations.',
+    techStack: ['Python', 'Gradio', 'Transformers', 'Qwen', 'Scikit-learn', 'XGBoost', 'SHAP', 'Pandas'],
+    dataset: 'User-uploaded CSV (tabular)',
+    model: 'Ensemble / AutoML selection + Qwen for narration',
+    metrics: {},
+    highlights: ['Plain-English steps', 'Tabular AutoML', 'Hosted Space'],
+    githubUrl: 'https://github.com/Abdrakib/Explainable_ML-Pipeline-Agent',
+    demoUrl: 'https://huggingface.co/spaces/Abdourakib/explainable-ml-pipeline-analysis-agent',
+    reportUrl: null,
+    notebookUrl: null,
+    demoImages: [],
+  },
+  'visual-analyst-agent': {
+    overview:
+      'Streamlit app that reads chart, table, and dashboard images and returns structured analysis with Gemini.',
+    problem: 'Quick, repeatable insight from screenshots of dashboards without manual transcription.',
+    approach:
+      'Uses Google Gemini for multimodal understanding; extracts data, summarizes trends, and rebuilds interactive Plotly charts.',
+    results: 'Live Hugging Face demo for upload, chat follow-up, and HTML export.',
+    techStack: ['Python', 'Streamlit', 'Google Gemini', 'Plotly', 'Pandas'],
+    dataset: 'User images (charts / tables / dashboards)',
+    model: 'Gemini 2.5 Flash (multimodal)',
+    metrics: {},
+    highlights: ['Chart & table images', 'Interactive redraw', 'Q&A on same image'],
+    githubUrl: 'https://github.com/Abdrakib/visual-analyst-agent',
+    demoUrl: 'https://huggingface.co/spaces/Abdourakib/visual-analyst-agent',
+    reportUrl: null,
+    notebookUrl: null,
+    demoImages: [],
+  },
   'ai-cs-tutor': {
     overview:
       'AI-powered computer science tutor using retrieval and web search to answer programming and CS questions.',

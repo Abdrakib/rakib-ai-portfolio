@@ -53,13 +53,16 @@ export default function About() {
         <ScrollReveal className="bio-section">
           <h2>Bio</h2>
           <p>
-            I am a Computer Science student at the Community College of Philadelphia with a strong focus on Artificial Intelligence and Machine Learning.
+            Computer Science student specializing in Artificial Intelligence and Machine Learning.
           </p>
           <p>
-            I build end-to-end machine learning projects using Python, TensorFlow, PyTorch, and scikit-learn, with work spanning computer vision, audio machine learning, NLP, and predictive modeling.
+            I design and build end-to-end machine learning systems using Python, TensorFlow, PyTorch, and scikit-learn, with projects spanning computer vision, natural language processing, and predictive modeling.
           </p>
           <p>
-            My goal is to grow into a machine learning engineer by building intelligent systems that solve real-world problems and deliver measurable impact.
+            My work focuses on developing practical AI applications, including deployed systems using FastAPI, React, Vercel, and Render, with an emphasis on solving real-world problems through intelligent data-driven solutions.
+          </p>
+          <p>
+            I am currently expanding my expertise in deep learning, transformer models, and scalable AI systems, with the goal of becoming a Machine Learning Engineer building impactful AI technologies.
           </p>
           <a href="/resume.pdf" download className="btn btn-primary about-resume">
             Download Resume
