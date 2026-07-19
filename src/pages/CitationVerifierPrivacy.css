@@ -1,0 +1,50 @@
+.privacy {
+  padding: 2rem 1.5rem;
+}
+
+.privacy-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.privacy-updated {
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+}
+
+.privacy-content h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+}
+
+.privacy-content p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.privacy-content ul {
+  margin: 0 0 1rem 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.privacy-content li {
+  margin-bottom: 0.35rem;
+}
+
+.privacy-content strong {
+  color: var(--text);
+}
+
+.privacy-content code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875em;
+  color: var(--text);
+}
+
+.privacy-content a {
+  color: var(--accent);
+}
